@@ -1,0 +1,5 @@
+Using the Django web framework to build a simple blog application. We have a Post model that stores the title and content of each blog post, and a post_list view that retrieves all of the blog posts from the database and renders them in a template. The URLs for the blog are defined in the blog/urls.py file, and we include them in the main mysite/urls.py file so that they are accessible at the root of the website.
+
+This is a simple example of how you can use the Django web framework to build a web application, but you can use other python web frameworks such as Flask, Pyramid, etc.
+
+Django provides a lot of built-in functionality for handling common web development tasks, such as authentication, database management, and form handling. Additionally, it provides a powerful template engine that you can use to define the structure and layout of your web pages.

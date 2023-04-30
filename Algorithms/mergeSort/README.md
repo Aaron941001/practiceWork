@@ -1,0 +1,3 @@
+This merge sort program takes an array as input and returns a new, sorted array. The merge_sort function uses the divide-and-conquer approach, where it repeatedly splits the input array in half until it reaches arrays of length 1, which are automatically sorted. Then it uses the merge function to combine the sorted arrays back together, in sorted order.
+
+It's important to note that, merge sort algorithm is a "divide and conquer" algorithm that divides the input array into two halves, recursively sorts the two halves and then merge the sorted halves.

@@ -1,0 +1,6 @@
+This program defines two main things:
+
+The sieve() method takes an integer as an argument which represents the limit and it returns an array of boolean values, where each value represents whether the corresponding index is a prime number or not. The method starts by initializing an array of boolean values with all values set to true, except for 0 and 1, which are not prime numbers.
+Then it iterates over the array, starting from 2 (the first prime number) up to the square root of the limit, and for each prime number, it marks all its multiples as non-prime numbers by setting their value to false in the array.
+The main() method is used for testing the sieve() method. It calls the sieve() method with a limit of 30, and then it prints all the prime numbers up to that limit.
+The Sieve of Eratosthenes algorithm uses a technique called "crossing out" to find all prime numbers up to a given limit. It starts by creating a list of all numbers from 2 to the limit, and then it iterates through the list, marking all multiples of the first prime number (2) as non-prime. It then repeats the process for the next prime number (3), and so on, until it has marked all multiples of all prime numbers up to the square root of the limit as non-prime. The remaining numbers in the list are prime numbers.

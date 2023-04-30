@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<flowController>
+    <name>My Data Flow</name>
+    <processors>
+        <listenHTTP id="1" port="8080"/>
+        <putDatabaseRecord id="2" connectionPool="MySQL Connection Pool">
+            <tableName>data_table</tableName>
+            <batchSize>1</batchSize>
+        </putDatabaseRecord>
+    </processors>
+    <connections>
+        <connection source="1" destination="2"/>
+    </connections>
+</flowController>

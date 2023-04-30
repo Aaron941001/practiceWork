@@ -1,0 +1,7 @@
+The dijkstra() function takes in a graph, represented as a dictionary of dictionaries, where the keys are the node names and the values are dictionaries containing the neighbors and their weights. It also takes in a starting node. It initializes a dictionary of distances with all distances set to infinity, except for the starting node, which is set to 0. It then uses a heap to efficiently find the node with the smallest distance and updates the distances of its neighbors if a shorter path is found. It returns a dictionary of shortest distances to each node in the graph.
+
+The get_shortest_path() function takes in the graph, the starting node, and the end node. It calls the dijkstra() function to get the dictionary of shortest paths, and it returns the value of the end node from that dictionary.
+
+The program also has a main method which you can use to test the get_shortest_path() function. In this example, the graph is represented by a dictionary of dictionaries, where each key is a node and its value is a dictionary of its neighbors and their weights, and the main method calls the get_shortest_path() function, passing this graph, the start node, and the end node, and it prints the shortest path.
+
+It uses the heapq library, which provides an implementation of a priority queue, to efficiently find the node with the smallest distance.

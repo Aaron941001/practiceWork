@@ -1,0 +1,3 @@
+This example uses the XMLHttpRequest object to make a GET request to a REST API that returns a JSON array of user data. The onreadystatechange callback function is called when the API sends back a response. Inside the callback function, it parses the JSON response and updates the contents of a webpage element with an ID of "data-container" with the data from the API. This code assumes there is a DOM element with an id of "data-container" which is going to be used to update the data.
+
+Note that this is a very simplified example and in real-world applications you would likely want to handle errors and other edge cases more gracefully, as well as perform more advanced data manipulation before updating the webpage.
